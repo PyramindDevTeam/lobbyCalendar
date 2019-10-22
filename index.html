@@ -1,0 +1,79 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Pyramind Main Lobby HomePage</title>
+  <meta name="description" content="Pyramind Main Lobby HomePage">
+  <meta name="PyraBlum" content="SitePoint">
+
+  <link rel="stylesheet" href="css/main.css">
+  <script 
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script type="text/javascript" src="js/main.js"></script>
+
+
+  <!-- added to auto refresh page, trying to prevent 
+    the monitor from falling asslep-->
+  <meta http-equiv="refresh" content="2700" />
+
+</head>
+
+<body>
+
+
+  <div class="mainContainer">
+    <div class="floaterWindowLeft floaterBottomBorder"></div>
+    <div class="floaterWindowRight floaterBottomBorder keyText">
+
+      <div class="keyHolder">
+        <div class="keyHolderTop">
+        <h1>Calendar Key</h1>
+        </div>
+        <div class="keyHolderLeft">
+          <div class="colorBox uLabColor"> </div>uLab
+          <br>
+          <div class="colorBox dLabColor"></div>dLab
+        </div>
+        <div class="keyHolderCenter">
+          <div class="colorBox vaultColor"></div>The Vault
+          <br>
+          <div class="colorBox loftColor"></div>The Loft
+          <br>
+          <div class="colorBox studioAColor"></div>Studio A
+        </div>
+        <div class="keyHolderRight">
+          <div class="colorBox studioBColor"></div>Studio B
+          <br>
+          <div class="colorBox liveRoomColor"></div>Live Room
+          <br>
+        </div>
+      </div>
+    </div>
+    <div class="weeekDiv">
+      <div class="dayBox"><h2>Sunday</h2></div>
+      <div class="dayBox"><h2>Monday</h2></div>
+      <div class="dayBox"><h2>Tuesday</h2></div>
+      <div class="dayBox"><h2>Wednesday</h2></div>
+      <div class="dayBox"><h2>Thursday</h2></div>
+      <div class="dayBox"><h2>Friday</h2></div>
+      <div class="dayBox"><h2>Saturday</h2></div>
+    </div>
+    <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=WEEK&amp;height=1044&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=pyramind.com_2d3732383634333535313633%40resource.calendar.google.com&amp;color=%238C500B&amp;src=pyramind.com_2d33303535333834302d313932%40resource.calendar.google.com&amp;color=%235F6B02&amp;src=pyramind.com_37333332393034353838%40resource.calendar.google.com&amp;color=%235229A3&amp;src=pyramind.com_31383434393233333831%40resource.calendar.google.com&amp;color=%23865A5A&amp;src=pyramind.com_3538353535373333383339%40resource.calendar.google.com&amp;color=%23333333&amp;src=pyramind.com_2d3239333535353937373236%40resource.calendar.google.com&amp;color=%23711616&amp;src=pyramind.com_39343336373933392d3532%40resource.calendar.google.com&amp;color=%23b027ae&amp;ctz=America%2FLos_Angeles" style="border-width:0" width="1856" height="1044" frameborder="0" scrolling="no"></iframe>
+
+    <div class="clockHolder">
+      <p id="date"></p>
+      <div id="clock">
+        <p class="largeFont" id="time"></p>
+<!--        <p class="unit largeFont" id="hours"></p>
+        <p class="unit spacer"></p>
+        <p class="unit largeFont" id="minutes"></p>
+        <p class="unit">&nbsp</p>
+        <p class="unit smallFont" id="ampm"></p> -->
+      </div>
+    </div>
+  </div>
+</body>
+</html>

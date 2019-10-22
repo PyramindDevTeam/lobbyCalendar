@@ -1,0 +1,206 @@
+/*  main CSS for the Pyramind Lobby Page */
+
+:root {
+  --floatBottom: 230px;
+  --mainWidth: 1856px;
+  --mainHeight: 1044px;
+}
+
+.mainContainer {
+  position: absolute;
+  display: grid;
+  left: 32px;
+  justify-items: center;
+  align-items: start;
+  height: var(--mainHeight);
+  width: var(--mainWidth);
+}
+
+.calHolder {
+  border: 1px solid black;
+  align-self: center;
+}
+
+.floaterWindowLeft {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background: white url('../img/Horiz_Transparent.png') no-repeat;
+  background-size: contain;
+  width: 50%;
+  height: var(--floatBottom);
+}
+
+.floaterWindowRight {
+  position: absolute;
+  display: grid;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: var(--floatBottom);
+  background-color: black;
+  z-index: 1;
+}
+
+.floaterBottomBorder {
+  border-bottom: 5px solid black;
+}
+
+/*--------------------------------*/
+/* CSS for the days of the week box */
+/*--------------------------------*/
+
+.weeekDiv {
+  position: absolute;
+  top: var(--floatBottom);
+  left: 49px;
+  height: 90px;
+  width: 96%;
+  /*background: grey;*/
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+}
+.dayBox {
+  height: 99%;
+  width: 100%;
+  background: #7e96bd;
+  border: 1px black solid;
+  justify-self: stretch;
+}
+.dayBox h2 {
+  text-align: center;
+  height: 50%;
+  padding-top: 10px;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/*--------------------------------*/
+/* CSS for the calendar color key */
+/*--------------------------------*/
+
+/* text properties */
+.keyText{
+  color: white;
+  text-align: left;
+  font-family: Arial, sans-serif;
+  line-height: 1.8em;
+}
+.keyText h1 {
+  font-weight: bold;
+  font-size: 1.4em;
+  text-decoration: underline;
+  text-align: center;
+}
+.keyText p {
+  line-height: 0.8em;
+}
+
+.keyHolder {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 1em;
+  grid-template-rows: 30% auto;
+  margin: 0 auto;
+  padding-top: 15px;
+  line-height: 40px;
+}
+.keyHolderTop {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.keyHolderLeft {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+}
+.keyHolderCenter {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+}
+.keyHolderRight {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+}
+.subKeyHolder {
+  display: flex;
+  flex-direction: column;
+}
+
+.colorBox {
+  display: inline-block;
+  height: 1.8em;
+  width: 1.8em;
+  margin: 0 .8em 0 .4em;
+}
+
+.uLabColor {
+  background-color: #668CD9;
+}
+.dLabColor {
+  background-color: #D47F1E;
+}
+.vaultColor {
+  background-color: #AD2D2D;
+}
+.loftColor {
+  background-color: #737373;
+}
+.studioAColor {
+  background-color: #8c66d9;
+}
+.studioBColor {
+  background-color: rgb(190,148,148);
+}
+.liveRoomColor {
+  background-color: #a7b828;
+}
+
+/*--------------------------------*/
+/* CSS for the clock */
+/*--------------------------------*/
+
+.clockHolder {
+  position: fixed;
+  background-color: #253439;
+  border-radius: 15px 0 0 0;
+  bottom: 0;
+  color: white;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  right: 0;
+  height: 8em;
+  width: 20%;
+}
+
+#clock {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center; 
+  -webkit-justify-content: center;
+  left:(50% - 300px);
+  position absolute;
+  top: calc(50% - 65px);
+}
+#date {
+  text-align: center;
+}
+
+.largeFont {
+  margin: 0;
+  padding: 0;
+  font-size: 3em;
+}
+.smallFont {
+  font-size: 2em;
+}
