@@ -111,26 +111,20 @@
   text-align: inherit;
 }
 
-.uLabColor {
+.yellowLabColor {
   background-color: #668CD9;
 }
-.dLabColor {
+.magentaLabColor {
   background-color: #D47F1E;
 }
-.vaultColor {
+.studioBColor {
   background-color: #AD2D2D;
 }
-.loftColor {
+.livingRoomColor {
   background-color: #737373;
 }
-.studioAColor {
+.monarchColor{
   background-color: #8c66d9;
-}
-.studioBColor {
-  background-color: rgb(190,148,148);
-}
-.liveRoomColor {
-  background-color: #a7b828;
 }
 
 /*--------------------------------*/
