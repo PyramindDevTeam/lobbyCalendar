@@ -25,16 +25,16 @@
   position: absolute;
   left: 0;
   top: 0;
-  z-index: 1;
   background: white url('../img/Horiz_Transparent.png') no-repeat;
   background-size: contain;
   width: 50%;
   height: var(--floatBottom);
+  z-index: 1;
 }
 
 .floaterWindowRight {
   position: absolute;
-  display: grid;
+  /*display: grid;*/
   top: 0;
   left: 50%;
   width: 50%;
@@ -45,36 +45,6 @@
 
 .floaterBottomBorder {
   border-bottom: 5px solid black;
-}
-
-/*--------------------------------*/
-/* CSS for the days of the week box */
-/*--------------------------------*/
-
-.weekDiv {
-  position: absolute;
-  top: var(--floatBottom);
-  left: 49px;
-  height: 90px;
-  width: 96%;
-  /*background: grey;*/
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-
-}
-.dayBox {
-  height: 99%;
-  width: 100%;
-  background: #7e96bd;
-  border: 1px black solid;
-  justify-self: stretch;
-}
-.dayBox h2 {
-  text-align: center;
-  height: 50%;
-  padding-top: 10px;
-  color: white;
-  font-family: Arial, sans-serif;
 }
 
 /*--------------------------------*/
@@ -99,45 +69,46 @@
 }
 
 .keyHolder {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 1em;
-  grid-template-rows: 30% auto;
   margin: 0 auto;
-  padding-top: 15px;
-  line-height: 40px;
+  height: 100%;
+
+  display: grid;
+  grid-template-rows: minmax(0, 33%) minmax(0,66%);
+  grid-column-gap: 1em;
+  grid-template-areas:
+    "top"
+    "body";
 }
+
 .keyHolderTop {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 2;
+  grid-area: top;
 }
-.keyHolderLeft {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-}
-.keyHolderCenter {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-}
-.keyHolderRight {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 2;
-}
-.subKeyHolder {
+
+.keyHolderBody {
+  grid-area: body;
+
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  margin: 0 10%;
+}
+
+.keyBox {
+  flex: 0 1 30%;
+  display: flex;
+  align-items: center;
+
 }
 
 .colorBox {
   display: inline-block;
-  height: 1.8em;
+  height: 80%;
   width: 1.8em;
   margin: 0 .8em 0 .4em;
+}
+
+.textBox {
+  text-align: inherit;
 }
 
 .uLabColor {
@@ -160,6 +131,47 @@
 }
 .liveRoomColor {
   background-color: #a7b828;
+}
+
+/*--------------------------------*/
+/* CSS for the days of the week box */
+/*--------------------------------*/
+
+.weekDiv {
+  position: absolute;
+  top: var(--floatBottom);
+  left: 49px;
+  height: 90px;
+  width: 96%;
+  /*background: grey;*/
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+
+}
+.dayBox {
+  height: 99%;
+  width: 100%;
+  background: #7e96bd;
+  border: 1px black solid;
+  justify-self: stretch;
+}
+.dayBox h2 {
+  text-align: center;
+  height: 50%;
+  padding-top: 10px;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/*--------------------------------*/
+/* CSS iFram cal div*/
+/*--------------------------------*/
+.calendarIframe {
+  width:100%;
+  height:100%;
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /*--------------------------------*/

@@ -1,10 +1,13 @@
+/**
+ * @file ClockDisplay.js
+ */
 
-clockDisplay = () => {
+const clockDisplay = () => {
   update();
   window.setInterval(update, 1000);
 };
 
-function update() {
+const update = () => {
   const dateOutput = $('#date');
   const timeOutput = $('#time');
 
@@ -35,4 +38,7 @@ function update() {
 
   const timeString = hours + ":" + minutes + ":" + seconds + " " + ampm;
   timeOutput.text(timeString);
-}
+};
+
+export default clockDisplay;
+
