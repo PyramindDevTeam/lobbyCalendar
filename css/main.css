@@ -51,7 +51,7 @@
 /* CSS for the days of the week box */
 /*--------------------------------*/
 
-.weeekDiv {
+.weekDiv {
   position: absolute;
   top: var(--floatBottom);
   left: 49px;
@@ -188,8 +188,8 @@
   display: -webkit-flex;
   justify-content: center; 
   -webkit-justify-content: center;
-  left:(50% - 300px);
-  position absolute;
+  left: calc(50% - 300px);
+  /*position: absolute;*/
   top: calc(50% - 65px);
 }
 #date {
