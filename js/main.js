@@ -3,7 +3,7 @@ import keyDisplay from './KeyDisplay'
 
 window.onload = function()
 {
-  // clockDisplay();
+  clockDisplay();
   // keyDisplay();
 };
 

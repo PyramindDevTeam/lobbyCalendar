@@ -112,19 +112,25 @@
 }
 
 .yellowLabColor {
-  background-color: #668CD9;
+  background-color: #E0C240;
 }
 .magentaLabColor {
-  background-color: #D47F1E;
-}
-.studioBColor {
-  background-color: #AD2D2D;
-}
-.livingRoomColor {
-  background-color: #737373;
+  background-color: #E67399;
 }
 .monarchColor{
-  background-color: #8c66d9;
+  background-color: #914D14;
+}
+.livingRoomColor {
+  background-color: #3C995B;
+}
+.studioAColor {
+  background-color: #603F99;
+}
+.studioBColor {
+  background-color: #59BFB3;
+}
+.studioCColor {
+  background-color: #536CA6;
 }
 
 /*--------------------------------*/
