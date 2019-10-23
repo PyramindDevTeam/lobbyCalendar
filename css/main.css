@@ -1,4 +1,8 @@
 /*  main CSS for the Pyramind Lobby Page */
+body {
+  margin: 0;
+  background-color: black;
+}
 
 :root {
   --floatBottom: 230px;
@@ -14,6 +18,7 @@
   align-items: start;
   height: var(--mainHeight);
   width: var(--mainWidth);
+
 }
 
 .calHolder {
@@ -142,7 +147,7 @@
   top: var(--floatBottom);
   left: 49px;
   height: 90px;
-  width: 96%;
+  width: 96.1%;
   /*background: grey;*/
   display: grid;
   grid-template-columns: repeat(7, 1fr);
@@ -180,19 +185,23 @@
 
 .clockHolder {
   position: fixed;
-  background-color: #253439;
-  border-radius: 15px 0 0 0;
   bottom: 0;
-  color: white;
+  right: 0;
+  /*left: 20%;*/
+  height: 8em;
+  width: 20%;
+  /*width: 40%;*/
+
   display: flex;
-  display: -webkit-flex;
+  display: -webkit-flex; background-color: #253439;
+
+  border-radius: 15px 0 0 0;
+  color: white;
   justify-content: center;
   -webkit-justify-content: center;
   flex-direction: column;
   font-family: Arial, sans-serif;
-  right: 0;
-  height: 8em;
-  width: 20%;
+
 }
 
 #clock {
